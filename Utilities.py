@@ -1,4 +1,3 @@
-import getpass
 from pprint import pformat
 
 from pymongo.errors import OperationFailure
