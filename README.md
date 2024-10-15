@@ -25,8 +25,8 @@ A recreation of the Student Center used for Long Beach State University. One of 
 
 ## Usage
 
-
-
+1. Run main.py
+2. On the menu option select '2: Informational' (Selecting 1 will open up the program for debugging purposes)
 
 ## Contributing
 
