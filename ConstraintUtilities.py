@@ -81,11 +81,6 @@ def select_general(cls):
                 # and add the filter to point to the selected document in the parent collection.
                 # I could have just said: filters[attribute_name] = select_general(attribute.document_type)
                 filters[attribute_name] = target
-                """This is intentionally recursive.  If A is a parent to B and B has a reference to A,
-                and that reference is part of the uniqueness constraint in B that we are using to select 
-                an instance of B, and B is a parent to C and C has a reference to B, and we want to select
-                an instance of C based on the "migrated" reference to B, then you see where the 
-                recursion comes in very handy."""
             elif type(attribute).__name__ == 'DateTimeField':
                 filters[attribute_name] = prompt_for_date(f'search for {attribute_name} =:')
             else:

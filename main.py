@@ -54,11 +54,6 @@ def select_student_major() -> StudentMajor:
 
 def prompt_for_enum(prompt: str, cls, attribute_name: str):
     """
-    MongoEngine attributes can be regulated with an enum.  If they are, the definition of
-    that attribute will carry the list of choices allowed by the enum (as well as the enum
-    class itself) that we can use to prompt the user for one of the valid values.  This
-    represents the 'don't let bad data happen in the first place' strategy rather than
-    wait for an exception from the database.
     :param prompt:          A text string telling the user what they are being prompted for.
     :param cls:             The class (not just the name) of the MongoEngine class that the
                             enumerated attribute belongs to.

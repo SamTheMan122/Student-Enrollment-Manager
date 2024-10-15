@@ -10,7 +10,6 @@ class StudentMajor(Document):
     major = ReferenceField(Major, required=True, reverse_delete_rule=mongoengine.DENY)
     da = DateTimeField(required=True)
 
-    # Be sure to conform to the naming conventions for the collection versus the class.
     meta = {'collection': 'studentMajors',
             'indexes': [
                 {'unique': True, 'fields': ['student', 'major'],
