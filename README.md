@@ -20,7 +20,7 @@ A recreation of the Student Center used for Long Beach State University. One of 
 
 ## Installation
 
-*This program requires the installation of the library, pymongo. Installation for pymongo can be found [here](https://pypi.org/project/pymongo/).*
+*This program requires the installation of pymongo and mongoengine. Installation for pymongo can be found [here](https://pypi.org/project/pymongo/). Installation instructions for mongoengine can be found [here](https://docs.mongoengine.org/guide/installing.html)*
 1. Download all necessary files
 2. Run main.py to connect to database and bring out the menu
 
