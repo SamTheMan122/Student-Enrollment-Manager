@@ -7,8 +7,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## About
 
@@ -22,9 +20,14 @@ A recreation of the Student Center used for Long Beach State University. One of 
 
 ## Installation
 
-Currently in early development. Basic features available.
+1. Download all necessary files
+2. Run main.py to connect to database and bring out the menu
 
 ## Usage
 
-1. Download all necessary files
-2. Run main.py to connect to database and bring out the menu
+
+
+
+## Contributing
+
+- Samuel Barcarse
