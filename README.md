@@ -10,7 +10,7 @@
 
 ## About
 
-A recreation of the Student Center used for Long Beach State University. One of the key features, the shopping cart, contains searching and enrollment capabilities for students looking to attend the university. Highlights the key features of the enrollment process in the student center such as adding, deleting, time conflict checking, and more! Written in Python and SQL, with data management in MongoDB.
+A recreation of the Student Center used for Long Beach State University. One of the key features, the shopping cart, contains searching and enrollment capabilities for students looking to attend the university. Highlights the key features of the enrollment process in the student center such as adding, deleting, time conflict checking, and more! Written in Python with NoSQL in mind, with data management in MongoDB.
 
 ## Features
 
