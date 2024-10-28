@@ -42,4 +42,4 @@ class Course(Document):
         return self.sections
 
     def __str__(self):
-        return f"Department abbrev: {self.department_abbreviation} number: {self.course_number} name: {self.name} units: {self.units}"
+        return f"{self.name} \n{self.department_abbreviation} {self.course_number}  \nUnits: {self.units} \n{self.description}"

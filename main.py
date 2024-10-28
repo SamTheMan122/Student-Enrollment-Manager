@@ -114,7 +114,7 @@ def add_course():
     :return: None
     """
     print("Which department offers this course?")
-    department = select_department()  # You need to implement select_department function
+    department = select_department()
     description = input('Please enter the course description-->')
     units = int(input('How many units for this course-->'))
     success: bool = False
@@ -131,6 +131,7 @@ def add_course():
         else:
             try:
                 new_course.save()
+                department.add_course(new_course)
                 success = True
             except Exception as e:
                 print('Errors adding the course:')
@@ -168,6 +169,8 @@ def add_section():
         else:
             try:
                 new_section.save()
+                course.add_section(new_section)
+                course.save()
                 success = True
             except Exception as e:
                 print('Errors adding the section:')
@@ -281,7 +284,6 @@ def delete_section():
     # sections = course.sections
     # for section in sections:
     #     section.delete()
-    # Now that all the items on the order are removed, we can safely remove the order itself.
     section.delete()
 
 def delete_student():

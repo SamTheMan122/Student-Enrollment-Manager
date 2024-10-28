@@ -5,13 +5,12 @@ class Department(Document):
     abbreviation = StringField(required=True, max_length=6)
     name = StringField(required=True, max_length=50)
     chair_name = StringField(required=True, max_length=80)
-    building = StringField(required=True, choices=['NAC', 'CDC', 'DC', 'ECS', 'EN2', 'EN3', 'EN4', 'EN5', 'ET', 'HSCI', 'NUR', 'VEC'])
+    building = StringField(required=True, choices=['NAC', 'CDC', 'DC', 'ECS', 'EN2', 'EN3', 'EN4', 'EN5', 'ET', 'HSCI', 'NUR', 'VEC', 'COB', 'AS', 'EED', 'ET', 'HSCI', 'FND'])
     office = IntField(required=True)
-    description = StringField(required=True, max_length=80)
+    description = StringField(required=True, max_length=500)
 
     majors = ListField(ReferenceField('Major'))
     courses = ListField(ReferenceField('Course'))
-    # courses = EmbeddedDocumentListField('Course', db_field='course')
 
     meta = {'collection': 'departments',
             'indexes': [
@@ -33,8 +32,8 @@ class Department(Document):
         self.courses = []
 
     def add_course(self, course):
-        if course not in self.courses:
-            self.courses.append(course)
+        self.courses.append(course)
+        self.save()
 
     def remove_course(self, course):
         if course in self.courses:
