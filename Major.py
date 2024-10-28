@@ -37,4 +37,4 @@ class Major(Document):
             self.students.remove(student)
 
     def __str__(self):
-        return f" Major Name: {self.name}\nMajor Description: {self.description}"
+        return f"Major Name: {self.name}\nMajor Description: {self.description}"

@@ -1,5 +1,6 @@
 from mongoengine import *
 import mongoengine
+from Department import Department
 
 class Course(Document):
     """A catalog entry. Each course proposes to offer students who enroll in

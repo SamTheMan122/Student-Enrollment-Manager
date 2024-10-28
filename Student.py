@@ -42,4 +42,4 @@ class Student(Document):
     #         self.sections.remove(section)
 
     def __str__(self):
-        return f"Student ID: {self.id} name: {self.lastName}, {self.firstName} e-mail: {self.email}"
+        return f"{self.lastName}, {self.firstName} \nStudent ID: {self.id} \nE-mail: {self.email}"

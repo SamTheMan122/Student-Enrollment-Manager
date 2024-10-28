@@ -22,7 +22,7 @@ class StudentMajor(Document):
         self.da = da
 
     def __str__(self):
-        return f'Student: {self.student}\nMajor: Major: {self.major}, \nDeclaration Date: {str(self.da)}'
+        return f'Student: {self.student}\n{self.major}, \nDeclaration Date: {str(self.da)}'
 
     def get_major(self):
         return self.major
